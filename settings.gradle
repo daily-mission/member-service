@@ -1,0 +1,8 @@
+rootProject.name = 'daily-mission-member-service'
+include 'member-domain'
+include 'member-application'
+include 'member-adapter'
+include 'member-adapter:member-web'
+include 'member-adapter:member-persistence'
+include 'member-container'
+

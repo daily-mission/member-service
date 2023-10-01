@@ -1,0 +1,12 @@
+project(':member-adapter:member-web') {
+    bootJar { enabled = false }
+    jar { enabled = true }
+
+    dependencies {
+        implementation 'org.springframework.boot:spring-boot-starter-web'
+
+        implementation 'com.daily.mission.common:common-web:0.0.4-SNAPSHOT'
+        implementation project (':member-application')
+        implementation project (':member-domain')
+    }
+}

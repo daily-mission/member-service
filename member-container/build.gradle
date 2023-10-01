@@ -1,0 +1,12 @@
+project(':member-container') {
+    bootJar { enabled = true }
+    jar { enabled = false }
+
+    dependencies {
+        implementation 'org.springframework.boot:spring-boot-starter'
+
+        implementation project (':member-adapter:member-web')
+        implementation project (':member-adapter:member-persistence')
+        implementation project (':member-application')
+    }
+}
